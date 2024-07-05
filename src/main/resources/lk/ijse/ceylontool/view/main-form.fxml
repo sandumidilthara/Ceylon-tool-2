@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="498.0" prefWidth="576.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ceylontool.controller.MainFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="96.0" layoutY="30.0" prefHeight="52.0" prefWidth="408.0" text="CEYLON  TOOL" textAlignment="CENTER" textFill="#3ba9bf">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCustomer" fitHeight="80.0" fitWidth="80.0" layoutX="57.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-customer-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgItem" fitHeight="80.0" fitWidth="80.0" layoutX="189.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-item-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgOrder" fitHeight="80.0" fitWidth="80.0" layoutX="324.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-purchase-order-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgSupplier" fitHeight="80.0" fitWidth="80.0" layoutX="456.0" layoutY="165.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-supplier-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutX="29.0" layoutY="123.0" prefHeight="0.0" prefWidth="542.0" />
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="29.0" layoutY="385.0" prefHeight="26.0" prefWidth="577.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="22.0" layoutY="425.0" prefHeight="16.0" prefWidth="577.0" text="select option">
+         <font>
+            <Font name="Ubuntu" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgSupplierDetails" fitHeight="80.0" fitWidth="80.0" layoutX="130.0" layoutY="271.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-supplies-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgdailyreview" fitHeight="80.0" fitWidth="80.0" layoutX="278.0" layoutY="271.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-review-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgdetails" fitHeight="80.0" fitWidth="80.0" layoutX="404.0" layoutY="271.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-details-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="130.0" layoutY="95.0" text="Tools for every job, Quality you can trust">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

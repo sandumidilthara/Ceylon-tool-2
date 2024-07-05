@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="654.0" style="-fx-background-color: white; -fx-background-color: #c7ecee;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ceylontool.controller.ItemSupplyFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="654.0">
+         <fill>
+            <LinearGradient endX="0.04807692307692308" endY="0.7115384615384616">
+               <stops>
+                  <Stop color="#1598d6" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <ImageView id="imgHome" fitHeight="53.0" fitWidth="55.0" layoutX="22.0" layoutY="16.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="95.0" layoutY="24.0" text="Manage Item Supply">
+         <font>
+            <Font name="Lucida Sans Demibold" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton id="btnAddNewCustomer" fx:id="btnAddNewItem" layoutX="518.0" layoutY="25.0" onAction="#btnAddNew_OnAction" prefHeight="35.0" prefWidth="122.0" style="-fx-cursor: hand; -fx-background-color: #95afc0;" text="+ New Supply" />
+
+      <TextField fx:id="txtSupply" layoutX="24.0" layoutY="104.0" prefHeight="26.0" prefWidth="298.0" promptText=" Supply Id :" />
+      <TextField fx:id="txtSupplier" layoutX="23.0" layoutY="143.0" prefHeight="26.0" prefWidth="606.0" promptText="Supplier Id :" />
+      <TextField fx:id="txtSupplierName" layoutX="23.0" layoutY="182.0" prefHeight="26.0" prefWidth="606.0" promptText="Supplier Name :" />
+      <TextField fx:id="txtItem" layoutX="24.0" layoutY="222.0" prefHeight="26.0" prefWidth="606.0" promptText="Item Name :" />
+
+      <JFXButton id="btnSave" fx:id="btnSave" layoutX="247.0" layoutY="324.0" onAction="#btnSave_OnAction" prefHeight="28.0" prefWidth="74.0" style="-fx-cursor: hand; -fx-background-color: #38ada9;" text="Save" textFill="#d9d5d5" />
+      <JFXButton id="btnDelete" fx:id="btnDelete" layoutX="333.0" layoutY="324.0" onAction="#btnDelete_OnAction" prefHeight="28.0" prefWidth="74.0" style="-fx-cursor: hand; -fx-background-color: #079992;" text="Delete" />
+      <TableView fx:id="tblSupply" layoutX="22.0" layoutY="363.0" prefHeight="285.0" prefWidth="615.0">
+         <columns>
+            <TableColumn prefWidth="93.59994125366211" text="Supply Id" />
+            <TableColumn prefWidth="77.5999755859375" text="Item Id" />
+            <TableColumn prefWidth="98.40003967285156" text="Supplier Id" />
+            <TableColumn prefWidth="105.60003662109375" text="Supplier Name" />
+            <TableColumn prefWidth="65.5999755859375" text="Item Name" />
+            <TableColumn prefWidth="88.79998779296875" text="Quentity" />
+            <TableColumn prefWidth="83.20000000000005" text="Buying Price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtQty" layoutX="23.0" layoutY="256.0" prefHeight="26.0" prefWidth="606.0" promptText=" Quentity :" />
+      <TextField fx:id="txtBuyingPrice" layoutX="24.0" layoutY="291.0" prefHeight="26.0" prefWidth="606.0" promptText="Buying Price :" />
+      <TextField fx:id="txtSupply1" layoutX="333.0" layoutY="104.0" prefHeight="26.0" prefWidth="298.0" promptText="Item Id :" />
+      <ImageView id="imgHome" fitHeight="53.0" fitWidth="55.0" layoutX="370.0" layoutY="14.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/images/icons8-supplier-58.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+   </children>
+</AnchorPane>
