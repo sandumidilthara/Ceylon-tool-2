@@ -1,6 +1,6 @@
 package lk.ijse.ceylontool;
 
-public class AppInitializerWrspper {
+public class AppInitializerWrapper {
 
 
 
